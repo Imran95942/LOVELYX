@@ -4,9 +4,9 @@ from MashaRoBot.pyrogramee.pluginshelper import admins_only, get_text
 from MashaRoBot import pbot
 
 
-@pbot.on_message(filters.command("tagall") & ~filters.edited & ~filters.bot)
+@pbot.on_message(filters.command("tagal") & ~filters.edited & ~filters.bot)
 @admins_only
-async def tagall(client, message):
+async def tagal(client, message):
     await message.reply("`Processing.....`")
     sh = get_text(message)
     if not sh:
